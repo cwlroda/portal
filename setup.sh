@@ -24,7 +24,7 @@ for file in "${FILES_NEEDED[@]}"
 do
 check_if_file_exists $file
 done
-if [[ "$missing_files" == "true" ]]; then 
+if [[ "$missing_files" == "true" ]]; then
 echo "Quitting bash job due to missing files. Ensure you have the required files before continuing."
 exit 0
 fi
@@ -42,6 +42,11 @@ else
 python3 -m pip install --upgrade pip
 python3 -m pip install -r requirements.txt
 fi
+
+cd ./src/app
+echo "Building static files and exporting to portal_build"
+npm i
+npm run build:static
 
 cd ../..
 
