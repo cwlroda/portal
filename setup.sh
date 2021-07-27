@@ -30,6 +30,9 @@ exit 0
 fi
 
 echo "Copying related engine files to portal_build..."
+if [ ! -d "./portal_build" ]; then
+mkdir ./portal_build
+fi
 cp -R ./src/engine/server ./portal_build
 cp ./src/engine/run.py ./portal_build
 
