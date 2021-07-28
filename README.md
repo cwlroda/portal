@@ -31,7 +31,6 @@ Portal is built using `python 3.7`. Ensure that you have this version (and up) b
 ```.bash
 git clone https://github.com/datature/portal
 cd portal
-pip3 install -r requirements.txt
 ./setup.sh
 ```
 
@@ -75,8 +74,8 @@ To load your dataset (images / videos), click on the `Open Folders` button in th
   <img alt="Load Assets" src="https://github.com/datature/portal/blob/develop/docs/images/screencaps/portal-ss-3.png?raw=true" width="90%">
 </p>
 
-#### Running Inferences 
-Click on any image or video, press `Analyze`, and Portal will make the inference and render the results. You can then adjust the confidence threshold or filter various classes as needed. Note that Portal run inferences on videos frame-by-frame, so that will take some time. You can change the inference settings, such as **IoU** or **Frame Settings** under `Advanced Settings`. 
+#### Running Inferences
+Click on any image or video, press `Analyze`, and Portal will make the inference and render the results. You can then adjust the confidence threshold or filter various classes as needed. Note that Portal run inferences on videos frame-by-frame, so that will take some time. You can change the inference settings, such as **IoU** or **Frame Settings** under `Advanced Settings`.
 
 <p align="center">
   <img alt="Image Prediction" src="https://github.com/datature/portal/blob/develop/docs/images/screencaps/portal-ss-4.png?raw=true" width="45%">
