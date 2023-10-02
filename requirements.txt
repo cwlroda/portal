@@ -7,7 +7,7 @@ Flask-RESTful==0.3.9
 Flask-SocketIO==5.1.0
 jsonpickle==2.0.0
 numpy==1.18.5
-opencv-python==4.5.1.48
+opencv-python==4.8.1.78.48
 Pillow==8.2.0
 scandir==1.10.0
 scantree==0.0.1
